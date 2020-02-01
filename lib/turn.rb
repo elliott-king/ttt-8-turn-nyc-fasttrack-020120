@@ -1,5 +1,5 @@
 def display_board(board, i, player="X")
-  
+
 end
 
 def input_to_index(ui)
