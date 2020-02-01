@@ -9,4 +9,4 @@ def input_to_index(ui)
   return ui.to_i + 1
 end
 
-def 
+def valid_move
