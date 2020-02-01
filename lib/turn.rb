@@ -20,3 +20,10 @@ def valid_move?(board, i)
     return true
   end
 end
+
+def move(board, i, player="X")
+  if valid_move(board, i)
+    board[i] = player
+  end
+  return board
+end
