@@ -34,7 +34,7 @@ def move(board, i, player="X")
   return board
 end
 
-def turn
+def turn(board)
   puts "Please enter 1-9:"
   i = gets.strip
 end
