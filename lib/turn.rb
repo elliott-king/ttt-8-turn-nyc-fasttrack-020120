@@ -1,12 +1,18 @@
-def display_board(board, i, player="X")
 
+def display_board(a=[" "," "," "," "," "," "," "," "," "])
+  puts " #{a[0]} | #{a[1]} | #{a[2]} "
+  puts "-----------"
+  puts " #{a[3]} | #{a[4]} | #{a[5]} "
+  puts "-----------"
+  puts " #{a[6]} | #{a[7]} | #{a[8]} "
 end
+
 
 def input_to_index(ui)
   if ui.to_i == 0
     return -1
   end
-  return ui.to_i + 1
+  return ui.to_i - 1
 end
 
 def valid_move?(board, i)
