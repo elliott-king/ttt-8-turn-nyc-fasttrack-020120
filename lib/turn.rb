@@ -9,4 +9,14 @@ def input_to_index(ui)
   return ui.to_i + 1
 end
 
-def valid_move
+def valid_move?(board, i)
+  if board.size <= i || i < 0
+    return false
+  end
+
+  if board[i] == 'X' || board[i] == 'O'
+    return false
+  else
+    return true
+  end
+end
