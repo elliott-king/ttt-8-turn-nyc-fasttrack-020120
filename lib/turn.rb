@@ -36,7 +36,7 @@ end
 
 def turn(board)
   i = -1
-  while !valid_move?(i)
+  while !valid_move?(board, i)
     puts "Please enter 1-9:"
     i = gets.strip
     # ask for input after failed validation
